@@ -19,8 +19,8 @@ function App() {
     <div className="App">
       <Header />
       {allCountryScores.map((elem, index) => (
-        <div className="table-responsive-sm">
-          <CountryName key={index} name={elem.name} />
+        <div className="table-responsive-sm" key={index}>
+          <CountryName name={elem.name} />
           {elem.scores
             .sort((a, b) => {
               if (a.s < b.s) {
@@ -32,7 +32,7 @@ function App() {
               }
             })
             .map((item, index) => (
-              <ScoresData key={index} n={item.n} s={item.s} />
+              <ScoresData n={item.n} s={item.s} key={index} />
             ))}
         </div>
       ))}

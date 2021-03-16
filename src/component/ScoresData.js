@@ -5,8 +5,8 @@ const ScoresData = (props) => {
       <table className="table table-success text-capitalize">
         <tbody>
           <tr>
-            <td key>{props.n}</td>
-            <td key>{props.s}</td>
+            <td>{props.n}</td>
+            <td>{props.s}</td>
           </tr>
         </tbody>
       </table>

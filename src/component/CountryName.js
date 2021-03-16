@@ -4,7 +4,7 @@ const CountryName = (props) => {
   return (
     <table className="table table-dark">
       <thead>
-        <tr key>
+        <tr>
           <th scope="col">{props.name}</th>
         </tr>
       </thead>
