@@ -2,13 +2,7 @@ import React from "react";
 
 const CountryName = (props) => {
   return (
-    <table className="table table-dark">
-      <thead>
-        <tr>
-          <th scope="col">{props.name}</th>
-        </tr>
-      </thead>
-    </table>
+    <h3>HIGH SCORES: {props.name}</h3>
   );
 };
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 const ScoresData = (props) => {
     return (
-      <table className="table table-success text-capitalize">
+      <table className="table text-capitalize">
         <tbody>
           <tr>
             <td>{props.n}</td>

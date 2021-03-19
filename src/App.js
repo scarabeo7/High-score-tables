@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <Header />
       {allCountryScores.map((elem, index) => (
-        <div className="table-responsive-sm" key={index}>
+        <div className="dataBox" key={index}>
           <CountryName name={elem.name} />
           {elem.scores
             .sort((a, b) => {
