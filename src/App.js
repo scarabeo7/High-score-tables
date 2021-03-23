@@ -34,12 +34,14 @@ function App() {
 
   const [sort, setSort] = useState("ascending");
   // sorts order when button is clicked
-  const sortHandler = () => {
-    if (sort === "ascending") {
-      setSort("descending");
-    } else {
-      setSort("ascending");
-    }
+  const sortClickHandler = () => {
+    setSort((sort) => {
+      if (sort === "ascending") {
+        return "descending";
+      } else {
+        return "ascending";
+      }
+    });
   };
 
   return (
@@ -53,7 +55,7 @@ function App() {
       </table>
       <hr className="border border-dark" />
       <h3>High Scores Per Country</h3>
-      <button className="btn btn-primary" onClick={sortHandler}>
+      <button className="btn btn-primary" onClick={sortClickHandler}>
         Click to Sort Scores
       </button>
       {country.map((country, index) => (
