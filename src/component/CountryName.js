@@ -1,9 +1,7 @@
 import React from "react";
 
 const CountryName = (props) => {
-  return (
-    <h3>HIGH SCORES: {props.name}</h3>
-  );
+  return <h5>HIGH SCORES: {props.name}</h5>;
 };
 
 export default CountryName;

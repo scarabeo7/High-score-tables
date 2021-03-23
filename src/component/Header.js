@@ -1,12 +1,16 @@
 import React from 'react'
 
-const Header = () => {
+const Header = (props) => {
     return (
       <div className="header">
-        <h1>High Scores Per Country</h1>
-        <hr className="border border-dark"></hr>
+        <h1>{props.title}</h1>
+        <hr className="border border-dark" />
       </div>
     );
 }
+
+Header.defaultProps = {
+  title: "High Scores Table",
+};
 
 export default Header
